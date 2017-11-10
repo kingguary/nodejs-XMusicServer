@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #494A5F;
+    font-weight: 500;
+    font-family: "Microsoft YaHei", "宋体", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif, FreeSans, Arimo;
+}
+
+#container {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+}
+
+div.search {
+    padding: 30px 0;
+}
+
+div.sparent {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+input {
+    width: 100%;
+    height: 42px;
+    padding-left: 13px;
+}
+
+button {
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+    position: absolute;
+}
+
+/*搜索框1*/
+.bar1 {
+    background: #A3D0C3;
+}
+
+.bar1 input {
+    border: 2px solid #7BA7AB;
+    border-radius: 5px;
+    background: #F9F0DA;
+    color: #9E9C9C;
+}
+
+.bar1 button {
+    top: 0;
+    right: 0;
+    background: #7BA7AB;
+    border-radius: 0 5px 5px 0;
+}
+
+.bar1 button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+}
+
+/*展示列表元素*/
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background: #F9F0DA;
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100%;
+    height: 120px;
+    margin-bottom:20px;
+}
+
+.item a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration:none;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+}
+
+.item div {
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.item h2 {
+    color: #9E9C9C;
+    font-size:22px;
+}
+
+.item h3 {
+    padding: 5px;
+    border-radius: 3px 3px 3px 3px;
+    color: #F9F0DA;
+    font-size:14px;
+    align-self: baseline;
+    background: #7BA7AB;
+}
+
+.item p {
+    color: #9E9C9C;
+    font-size:16px;
+}
